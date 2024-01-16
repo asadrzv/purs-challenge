@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F67482732B507A880045D0CD /* PursChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482722B507A880045D0CD /* PursChallengeApp.swift */; };
+		F67482752B507A880045D0CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482742B507A880045D0CD /* ContentView.swift */; };
+		F67482772B507A8B0045D0CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67482762B507A8B0045D0CD /* Assets.xcassets */; };
+		F674827B2B507A8B0045D0CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F674827A2B507A8B0045D0CD /* Preview Assets.xcassets */; };
+		F67482852B507A8B0045D0CD /* PursChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482842B507A8B0045D0CD /* PursChallengeTests.swift */; };
+		F674828F2B507A8B0045D0CD /* PursChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674828E2B507A8B0045D0CD /* PursChallengeUITests.swift */; };
+		F67482912B507A8B0045D0CD /* PursChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482902B507A8B0045D0CD /* PursChallengeUITestsLaunchTests.swift */; };
+		F67482A42B507AF10045D0CD /* DataSourceHomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482A32B507AF10045D0CD /* DataSourceHomeProtocol.swift */; };
+		F67482A62B507AFF0045D0CD /* DataSourceHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482A52B507AFF0045D0CD /* DataSourceHome.swift */; };
+		F67482A82B507B130045D0CD /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482A72B507B130045D0CD /* HomeViewModelProtocol.swift */; };
+		F67482AA2B507B1B0045D0CD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482A92B507B1B0045D0CD /* HomeViewModel.swift */; };
+		F67482AC2B507B2D0045D0CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482AB2B507B2D0045D0CD /* HomeView.swift */; };
+		F67482AE2B507B3C0045D0CD /* ConstantsHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482AD2B507B3C0045D0CD /* ConstantsHome.swift */; };
+		F67482B02B50826C0045D0CD /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482AF2B50826C0045D0CD /* Business.swift */; };
+		F67482B32B508ECB0045D0CD /* String+GetFormattedOperatingHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482B22B508ECB0045D0CD /* String+GetFormattedOperatingHours.swift */; };
+		F67482B62B509B100045D0CD /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67482B52B509B100045D0CD /* DayOfWeek.swift */; };
+		F67482CE2B51FE7F0045D0CD /* Chivo-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482BC2B51FE7D0045D0CD /* Chivo-ExtraBold.ttf */; };
+		F67482CF2B51FE7F0045D0CD /* Chivo-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482BD2B51FE7D0045D0CD /* Chivo-ExtraLightItalic.ttf */; };
+		F67482D02B51FE7F0045D0CD /* Chivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482BE2B51FE7D0045D0CD /* Chivo-Regular.ttf */; };
+		F67482D12B51FE7F0045D0CD /* Chivo-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482BF2B51FE7D0045D0CD /* Chivo-SemiBoldItalic.ttf */; };
+		F67482D22B51FE7F0045D0CD /* Chivo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482C02B51FE7E0045D0CD /* Chivo-Thin.ttf */; };
+		F67482D32B51FE7F0045D0CD /* Chivo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482C12B51FE7E0045D0CD /* Chivo-BoldItalic.ttf */; };
+		F67482D42B51FE7F0045D0CD /* Chivo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482C22B51FE7E0045D0CD /* Chivo-ExtraLight.ttf */; };
+		F67482D52B51FE7F0045D0CD /* Chivo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482C32B51FE7E0045D0CD /* Chivo-Bold.ttf */; };
+		F67482D62B51FE7F0045D0CD /* Chivo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482C42B51FE7E0045D0CD /* Chivo-Medium.ttf */; };
+		F67482D72B51FE7F0045D0CD /* Chivo-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482C52B51FE7E0045D0CD /* Chivo-ExtraBoldItalic.ttf */; };
+		F67482D82B51FE7F0045D0CD /* Chivo-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482C62B51FE7F0045D0CD /* Chivo-BlackItalic.ttf */; };
+		F67482D92B51FE7F0045D0CD /* Chivo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482C72B51FE7F0045D0CD /* Chivo-Italic.ttf */; };
+		F67482DA2B51FE7F0045D0CD /* Chivo-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482C82B51FE7F0045D0CD /* Chivo-LightItalic.ttf */; };
+		F67482DB2B51FE7F0045D0CD /* Chivo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482C92B51FE7F0045D0CD /* Chivo-Black.ttf */; };
+		F67482DC2B51FE7F0045D0CD /* Chivo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482CA2B51FE7F0045D0CD /* Chivo-SemiBold.ttf */; };
+		F67482DD2B51FE7F0045D0CD /* Chivo-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482CB2B51FE7F0045D0CD /* Chivo-MediumItalic.ttf */; };
+		F67482DE2B51FE7F0045D0CD /* Chivo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482CC2B51FE7F0045D0CD /* Chivo-Light.ttf */; };
+		F67482DF2B51FE7F0045D0CD /* Chivo-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482CD2B51FE7F0045D0CD /* Chivo-ThinItalic.ttf */; };
+		F67482F42B51FEF10045D0CD /* FiraSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482E22B51FEEF0045D0CD /* FiraSans-ExtraBoldItalic.ttf */; };
+		F67482F52B51FEF10045D0CD /* FiraSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482E32B51FEEF0045D0CD /* FiraSans-Bold.ttf */; };
+		F67482F62B51FEF10045D0CD /* FiraSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482E42B51FEF00045D0CD /* FiraSans-Italic.ttf */; };
+		F67482F72B51FEF10045D0CD /* FiraSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482E52B51FEF00045D0CD /* FiraSans-Black.ttf */; };
+		F67482F82B51FEF10045D0CD /* FiraSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482E62B51FEF00045D0CD /* FiraSans-SemiBold.ttf */; };
+		F67482F92B51FEF10045D0CD /* FiraSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482E72B51FEF00045D0CD /* FiraSans-ExtraBold.ttf */; };
+		F67482FA2B51FEF10045D0CD /* FiraSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482E82B51FEF00045D0CD /* FiraSans-Light.ttf */; };
+		F67482FB2B51FEF10045D0CD /* FiraSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482E92B51FEF00045D0CD /* FiraSans-Regular.ttf */; };
+		F67482FC2B51FEF10045D0CD /* FiraSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482EA2B51FEF00045D0CD /* FiraSans-LightItalic.ttf */; };
+		F67482FD2B51FEF10045D0CD /* FiraSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482EB2B51FEF00045D0CD /* FiraSans-BoldItalic.ttf */; };
+		F67482FE2B51FEF10045D0CD /* FiraSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482EC2B51FEF00045D0CD /* FiraSans-SemiBoldItalic.ttf */; };
+		F67482FF2B51FEF10045D0CD /* FiraSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482ED2B51FEF00045D0CD /* FiraSans-ThinItalic.ttf */; };
+		F67483002B51FEF10045D0CD /* FiraSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482EE2B51FEF10045D0CD /* FiraSans-Thin.ttf */; };
+		F67483012B51FEF10045D0CD /* FiraSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482EF2B51FEF10045D0CD /* FiraSans-ExtraLightItalic.ttf */; };
+		F67483022B51FEF10045D0CD /* FiraSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482F02B51FEF10045D0CD /* FiraSans-ExtraLight.ttf */; };
+		F67483032B51FEF10045D0CD /* FiraSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482F12B51FEF10045D0CD /* FiraSans-BlackItalic.ttf */; };
+		F67483042B51FEF10045D0CD /* FiraSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482F22B51FEF10045D0CD /* FiraSans-MediumItalic.ttf */; };
+		F67483052B51FEF10045D0CD /* FiraSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67482F32B51FEF10045D0CD /* FiraSans-Medium.ttf */; };
+		F674830C2B51FF1D0045D0CD /* HindSiliguri-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67483072B51FF1D0045D0CD /* HindSiliguri-Light.ttf */; };
+		F674830D2B51FF1D0045D0CD /* HindSiliguri-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67483082B51FF1D0045D0CD /* HindSiliguri-Medium.ttf */; };
+		F674830E2B51FF1D0045D0CD /* HindSiliguri-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67483092B51FF1D0045D0CD /* HindSiliguri-Bold.ttf */; };
+		F674830F2B51FF1D0045D0CD /* HindSiliguri-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F674830A2B51FF1D0045D0CD /* HindSiliguri-Regular.ttf */; };
+		F67483102B51FF1D0045D0CD /* HindSiliguri-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F674830B2B51FF1D0045D0CD /* HindSiliguri-SemiBold.ttf */; };
+		F67483132B54C7510045D0CD /* OperatingDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67483122B54C7510045D0CD /* OperatingDay.swift */; };
+		F67483152B54DE4A0045D0CD /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67483142B54DE4A0045D0CD /* MenuView.swift */; };
+		F67483172B54EED20045D0CD /* Date+IsMidnight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67483162B54EED20045D0CD /* Date+IsMidnight.swift */; };
+		F674831B2B5510690045D0CD /* Date+DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674831A2B5510690045D0CD /* Date+DayOfWeek.swift */; };
+		F674831E2B55CE720045D0CD /* OperatingShiftsAccordian.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674831D2B55CE720045D0CD /* OperatingShiftsAccordian.swift */; };
+		F67483202B55F3250045D0CD /* OperationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674831F2B55F3250045D0CD /* OperationStatus.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F67482812B507A8B0045D0CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F67482672B507A880045D0CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F674826E2B507A880045D0CD;
+			remoteInfo = PursChallenge;
+		};
+		F674828B2B507A8B0045D0CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F67482672B507A880045D0CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F674826E2B507A880045D0CD;
+			remoteInfo = PursChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F674826F2B507A880045D0CD /* PursChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PursChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67482722B507A880045D0CD /* PursChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PursChallengeApp.swift; sourceTree = "<group>"; };
+		F67482742B507A880045D0CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F67482762B507A8B0045D0CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F67482782B507A8B0045D0CD /* PursChallenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PursChallenge.entitlements; sourceTree = "<group>"; };
+		F674827A2B507A8B0045D0CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F67482802B507A8B0045D0CD /* PursChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PursChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67482842B507A8B0045D0CD /* PursChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PursChallengeTests.swift; sourceTree = "<group>"; };
+		F674828A2B507A8B0045D0CD /* PursChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PursChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F674828E2B507A8B0045D0CD /* PursChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PursChallengeUITests.swift; sourceTree = "<group>"; };
+		F67482902B507A8B0045D0CD /* PursChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PursChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F67482A32B507AF10045D0CD /* DataSourceHomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceHomeProtocol.swift; sourceTree = "<group>"; };
+		F67482A52B507AFF0045D0CD /* DataSourceHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceHome.swift; sourceTree = "<group>"; };
+		F67482A72B507B130045D0CD /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
+		F67482A92B507B1B0045D0CD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F67482AB2B507B2D0045D0CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F67482AD2B507B3C0045D0CD /* ConstantsHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsHome.swift; sourceTree = "<group>"; };
+		F67482AF2B50826C0045D0CD /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		F67482B22B508ECB0045D0CD /* String+GetFormattedOperatingHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+GetFormattedOperatingHours.swift"; sourceTree = "<group>"; };
+		F67482B52B509B100045D0CD /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
+		F67482BC2B51FE7D0045D0CD /* Chivo-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F67482BD2B51FE7D0045D0CD /* Chivo-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		F67482BE2B51FE7D0045D0CD /* Chivo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Regular.ttf"; sourceTree = "<group>"; };
+		F67482BF2B51FE7D0045D0CD /* Chivo-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F67482C02B51FE7E0045D0CD /* Chivo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Thin.ttf"; sourceTree = "<group>"; };
+		F67482C12B51FE7E0045D0CD /* Chivo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F67482C22B51FE7E0045D0CD /* Chivo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F67482C32B51FE7E0045D0CD /* Chivo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Bold.ttf"; sourceTree = "<group>"; };
+		F67482C42B51FE7E0045D0CD /* Chivo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Medium.ttf"; sourceTree = "<group>"; };
+		F67482C52B51FE7E0045D0CD /* Chivo-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F67482C62B51FE7F0045D0CD /* Chivo-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F67482C72B51FE7F0045D0CD /* Chivo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Italic.ttf"; sourceTree = "<group>"; };
+		F67482C82B51FE7F0045D0CD /* Chivo-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-LightItalic.ttf"; sourceTree = "<group>"; };
+		F67482C92B51FE7F0045D0CD /* Chivo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Black.ttf"; sourceTree = "<group>"; };
+		F67482CA2B51FE7F0045D0CD /* Chivo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-SemiBold.ttf"; sourceTree = "<group>"; };
+		F67482CB2B51FE7F0045D0CD /* Chivo-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F67482CC2B51FE7F0045D0CD /* Chivo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Light.ttf"; sourceTree = "<group>"; };
+		F67482CD2B51FE7F0045D0CD /* Chivo-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-ThinItalic.ttf"; sourceTree = "<group>"; };
+		F67482E22B51FEEF0045D0CD /* FiraSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F67482E32B51FEEF0045D0CD /* FiraSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Bold.ttf"; sourceTree = "<group>"; };
+		F67482E42B51FEF00045D0CD /* FiraSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Italic.ttf"; sourceTree = "<group>"; };
+		F67482E52B51FEF00045D0CD /* FiraSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Black.ttf"; sourceTree = "<group>"; };
+		F67482E62B51FEF00045D0CD /* FiraSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		F67482E72B51FEF00045D0CD /* FiraSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F67482E82B51FEF00045D0CD /* FiraSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Light.ttf"; sourceTree = "<group>"; };
+		F67482E92B51FEF00045D0CD /* FiraSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Regular.ttf"; sourceTree = "<group>"; };
+		F67482EA2B51FEF00045D0CD /* FiraSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		F67482EB2B51FEF00045D0CD /* FiraSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F67482EC2B51FEF00045D0CD /* FiraSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F67482ED2B51FEF00045D0CD /* FiraSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		F67482EE2B51FEF10045D0CD /* FiraSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Thin.ttf"; sourceTree = "<group>"; };
+		F67482EF2B51FEF10045D0CD /* FiraSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		F67482F02B51FEF10045D0CD /* FiraSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F67482F12B51FEF10045D0CD /* FiraSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F67482F22B51FEF10045D0CD /* FiraSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F67482F32B51FEF10045D0CD /* FiraSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Medium.ttf"; sourceTree = "<group>"; };
+		F67483072B51FF1D0045D0CD /* HindSiliguri-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HindSiliguri-Light.ttf"; sourceTree = "<group>"; };
+		F67483082B51FF1D0045D0CD /* HindSiliguri-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HindSiliguri-Medium.ttf"; sourceTree = "<group>"; };
+		F67483092B51FF1D0045D0CD /* HindSiliguri-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HindSiliguri-Bold.ttf"; sourceTree = "<group>"; };
+		F674830A2B51FF1D0045D0CD /* HindSiliguri-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HindSiliguri-Regular.ttf"; sourceTree = "<group>"; };
+		F674830B2B51FF1D0045D0CD /* HindSiliguri-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HindSiliguri-SemiBold.ttf"; sourceTree = "<group>"; };
+		F67483112B51FF640045D0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F67483122B54C7510045D0CD /* OperatingDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatingDay.swift; sourceTree = "<group>"; };
+		F67483142B54DE4A0045D0CD /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		F67483162B54EED20045D0CD /* Date+IsMidnight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+IsMidnight.swift"; sourceTree = "<group>"; };
+		F674831A2B5510690045D0CD /* Date+DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+DayOfWeek.swift"; sourceTree = "<group>"; };
+		F674831D2B55CE720045D0CD /* OperatingShiftsAccordian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatingShiftsAccordian.swift; sourceTree = "<group>"; };
+		F674831F2B55F3250045D0CD /* OperationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationStatus.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F674826C2B507A880045D0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F674827D2B507A8B0045D0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67482872B507A8B0045D0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F67482662B507A880045D0CD = {
+			isa = PBXGroup;
+			children = (
+				F67482712B507A880045D0CD /* PursChallenge */,
+				F67482832B507A8B0045D0CD /* PursChallengeTests */,
+				F674828D2B507A8B0045D0CD /* PursChallengeUITests */,
+				F67482702B507A880045D0CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F67482702B507A880045D0CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F674826F2B507A880045D0CD /* PursChallenge.app */,
+				F67482802B507A8B0045D0CD /* PursChallengeTests.xctest */,
+				F674828A2B507A8B0045D0CD /* PursChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F67482712B507A880045D0CD /* PursChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				F67483112B51FF640045D0CD /* Info.plist */,
+				F67482BA2B51FDD30045D0CD /* Files */,
+				F67483182B54F0260045D0CD /* Utils */,
+				F674829D2B507A9F0045D0CD /* Home */,
+				F67482722B507A880045D0CD /* PursChallengeApp.swift */,
+				F67482742B507A880045D0CD /* ContentView.swift */,
+				F67482762B507A8B0045D0CD /* Assets.xcassets */,
+				F67482782B507A8B0045D0CD /* PursChallenge.entitlements */,
+				F67482792B507A8B0045D0CD /* Preview Content */,
+			);
+			path = PursChallenge;
+			sourceTree = "<group>";
+		};
+		F67482792B507A8B0045D0CD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F674827A2B507A8B0045D0CD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F67482832B507A8B0045D0CD /* PursChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F67482842B507A8B0045D0CD /* PursChallengeTests.swift */,
+			);
+			path = PursChallengeTests;
+			sourceTree = "<group>";
+		};
+		F674828D2B507A8B0045D0CD /* PursChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F674828E2B507A8B0045D0CD /* PursChallengeUITests.swift */,
+				F67482902B507A8B0045D0CD /* PursChallengeUITestsLaunchTests.swift */,
+			);
+			path = PursChallengeUITests;
+			sourceTree = "<group>";
+		};
+		F674829D2B507A9F0045D0CD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F67482A22B507ACB0045D0CD /* Network */,
+				F67482A12B507AC50045D0CD /* Model */,
+				F67482A02B507ABE0045D0CD /* ViewModel */,
+				F674829F2B507AA90045D0CD /* View */,
+				F674829E2B507AA40045D0CD /* Utils */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F674829E2B507AA40045D0CD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F674831C2B55CE4B0045D0CD /* CustomView */,
+				F67482B72B510D230045D0CD /* Extension */,
+				F67482AD2B507B3C0045D0CD /* ConstantsHome.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F674829F2B507AA90045D0CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F67482AB2B507B2D0045D0CD /* HomeView.swift */,
+				F67483142B54DE4A0045D0CD /* MenuView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F67482A02B507ABE0045D0CD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F67482A72B507B130045D0CD /* HomeViewModelProtocol.swift */,
+				F67482A92B507B1B0045D0CD /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F67482A12B507AC50045D0CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F67482AF2B50826C0045D0CD /* Business.swift */,
+				F67483122B54C7510045D0CD /* OperatingDay.swift */,
+				F674831F2B55F3250045D0CD /* OperationStatus.swift */,
+				F67482B52B509B100045D0CD /* DayOfWeek.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F67482A22B507ACB0045D0CD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F67482A32B507AF10045D0CD /* DataSourceHomeProtocol.swift */,
+				F67482A52B507AFF0045D0CD /* DataSourceHome.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F67482B72B510D230045D0CD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F67482B22B508ECB0045D0CD /* String+GetFormattedOperatingHours.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F67482BA2B51FDD30045D0CD /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				F67482BB2B51FDF10045D0CD /* Font */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		F67482BB2B51FDF10045D0CD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F67483062B51FF040045D0CD /* HindSiliguri */,
+				F67482E12B51FEBE0045D0CD /* FiraSans */,
+				F67482E02B51FEA10045D0CD /* Chivo */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		F67482E02B51FEA10045D0CD /* Chivo */ = {
+			isa = PBXGroup;
+			children = (
+				F67482C92B51FE7F0045D0CD /* Chivo-Black.ttf */,
+				F67482C62B51FE7F0045D0CD /* Chivo-BlackItalic.ttf */,
+				F67482C32B51FE7E0045D0CD /* Chivo-Bold.ttf */,
+				F67482C12B51FE7E0045D0CD /* Chivo-BoldItalic.ttf */,
+				F67482BC2B51FE7D0045D0CD /* Chivo-ExtraBold.ttf */,
+				F67482C52B51FE7E0045D0CD /* Chivo-ExtraBoldItalic.ttf */,
+				F67482C22B51FE7E0045D0CD /* Chivo-ExtraLight.ttf */,
+				F67482BD2B51FE7D0045D0CD /* Chivo-ExtraLightItalic.ttf */,
+				F67482C72B51FE7F0045D0CD /* Chivo-Italic.ttf */,
+				F67482CC2B51FE7F0045D0CD /* Chivo-Light.ttf */,
+				F67482C82B51FE7F0045D0CD /* Chivo-LightItalic.ttf */,
+				F67482C42B51FE7E0045D0CD /* Chivo-Medium.ttf */,
+				F67482CB2B51FE7F0045D0CD /* Chivo-MediumItalic.ttf */,
+				F67482BE2B51FE7D0045D0CD /* Chivo-Regular.ttf */,
+				F67482CA2B51FE7F0045D0CD /* Chivo-SemiBold.ttf */,
+				F67482BF2B51FE7D0045D0CD /* Chivo-SemiBoldItalic.ttf */,
+				F67482C02B51FE7E0045D0CD /* Chivo-Thin.ttf */,
+				F67482CD2B51FE7F0045D0CD /* Chivo-ThinItalic.ttf */,
+			);
+			path = Chivo;
+			sourceTree = "<group>";
+		};
+		F67482E12B51FEBE0045D0CD /* FiraSans */ = {
+			isa = PBXGroup;
+			children = (
+				F67482E52B51FEF00045D0CD /* FiraSans-Black.ttf */,
+				F67482F12B51FEF10045D0CD /* FiraSans-BlackItalic.ttf */,
+				F67482E32B51FEEF0045D0CD /* FiraSans-Bold.ttf */,
+				F67482EB2B51FEF00045D0CD /* FiraSans-BoldItalic.ttf */,
+				F67482E72B51FEF00045D0CD /* FiraSans-ExtraBold.ttf */,
+				F67482E22B51FEEF0045D0CD /* FiraSans-ExtraBoldItalic.ttf */,
+				F67482F02B51FEF10045D0CD /* FiraSans-ExtraLight.ttf */,
+				F67482EF2B51FEF10045D0CD /* FiraSans-ExtraLightItalic.ttf */,
+				F67482E42B51FEF00045D0CD /* FiraSans-Italic.ttf */,
+				F67482E82B51FEF00045D0CD /* FiraSans-Light.ttf */,
+				F67482EA2B51FEF00045D0CD /* FiraSans-LightItalic.ttf */,
+				F67482F32B51FEF10045D0CD /* FiraSans-Medium.ttf */,
+				F67482F22B51FEF10045D0CD /* FiraSans-MediumItalic.ttf */,
+				F67482E92B51FEF00045D0CD /* FiraSans-Regular.ttf */,
+				F67482E62B51FEF00045D0CD /* FiraSans-SemiBold.ttf */,
+				F67482EC2B51FEF00045D0CD /* FiraSans-SemiBoldItalic.ttf */,
+				F67482EE2B51FEF10045D0CD /* FiraSans-Thin.ttf */,
+				F67482ED2B51FEF00045D0CD /* FiraSans-ThinItalic.ttf */,
+			);
+			path = FiraSans;
+			sourceTree = "<group>";
+		};
+		F67483062B51FF040045D0CD /* HindSiliguri */ = {
+			isa = PBXGroup;
+			children = (
+				F67483092B51FF1D0045D0CD /* HindSiliguri-Bold.ttf */,
+				F67483072B51FF1D0045D0CD /* HindSiliguri-Light.ttf */,
+				F67483082B51FF1D0045D0CD /* HindSiliguri-Medium.ttf */,
+				F674830A2B51FF1D0045D0CD /* HindSiliguri-Regular.ttf */,
+				F674830B2B51FF1D0045D0CD /* HindSiliguri-SemiBold.ttf */,
+			);
+			path = HindSiliguri;
+			sourceTree = "<group>";
+		};
+		F67483182B54F0260045D0CD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F67483192B54F0300045D0CD /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F67483192B54F0300045D0CD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F67483162B54EED20045D0CD /* Date+IsMidnight.swift */,
+				F674831A2B5510690045D0CD /* Date+DayOfWeek.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F674831C2B55CE4B0045D0CD /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F674831D2B55CE720045D0CD /* OperatingShiftsAccordian.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F674826E2B507A880045D0CD /* PursChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F67482942B507A8B0045D0CD /* Build configuration list for PBXNativeTarget "PursChallenge" */;
+			buildPhases = (
+				F674826B2B507A880045D0CD /* Sources */,
+				F674826C2B507A880045D0CD /* Frameworks */,
+				F674826D2B507A880045D0CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PursChallenge;
+			productName = PursChallenge;
+			productReference = F674826F2B507A880045D0CD /* PursChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F674827F2B507A8B0045D0CD /* PursChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F67482972B507A8B0045D0CD /* Build configuration list for PBXNativeTarget "PursChallengeTests" */;
+			buildPhases = (
+				F674827C2B507A8B0045D0CD /* Sources */,
+				F674827D2B507A8B0045D0CD /* Frameworks */,
+				F674827E2B507A8B0045D0CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F67482822B507A8B0045D0CD /* PBXTargetDependency */,
+			);
+			name = PursChallengeTests;
+			productName = PursChallengeTests;
+			productReference = F67482802B507A8B0045D0CD /* PursChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F67482892B507A8B0045D0CD /* PursChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F674829A2B507A8B0045D0CD /* Build configuration list for PBXNativeTarget "PursChallengeUITests" */;
+			buildPhases = (
+				F67482862B507A8B0045D0CD /* Sources */,
+				F67482872B507A8B0045D0CD /* Frameworks */,
+				F67482882B507A8B0045D0CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F674828C2B507A8B0045D0CD /* PBXTargetDependency */,
+			);
+			name = PursChallengeUITests;
+			productName = PursChallengeUITests;
+			productReference = F674828A2B507A8B0045D0CD /* PursChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F67482672B507A880045D0CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F674826E2B507A880045D0CD = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					F674827F2B507A8B0045D0CD = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F674826E2B507A880045D0CD;
+					};
+					F67482892B507A8B0045D0CD = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F674826E2B507A880045D0CD;
+					};
+				};
+			};
+			buildConfigurationList = F674826A2B507A880045D0CD /* Build configuration list for PBXProject "PursChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F67482662B507A880045D0CD;
+			productRefGroup = F67482702B507A880045D0CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F674826E2B507A880045D0CD /* PursChallenge */,
+				F674827F2B507A8B0045D0CD /* PursChallengeTests */,
+				F67482892B507A8B0045D0CD /* PursChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F674826D2B507A880045D0CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67482FF2B51FEF10045D0CD /* FiraSans-ThinItalic.ttf in Resources */,
+				F67483022B51FEF10045D0CD /* FiraSans-ExtraLight.ttf in Resources */,
+				F67483042B51FEF10045D0CD /* FiraSans-MediumItalic.ttf in Resources */,
+				F67483012B51FEF10045D0CD /* FiraSans-ExtraLightItalic.ttf in Resources */,
+				F67482F52B51FEF10045D0CD /* FiraSans-Bold.ttf in Resources */,
+				F67482DA2B51FE7F0045D0CD /* Chivo-LightItalic.ttf in Resources */,
+				F67482D22B51FE7F0045D0CD /* Chivo-Thin.ttf in Resources */,
+				F67482D52B51FE7F0045D0CD /* Chivo-Bold.ttf in Resources */,
+				F67482D72B51FE7F0045D0CD /* Chivo-ExtraBoldItalic.ttf in Resources */,
+				F67482F92B51FEF10045D0CD /* FiraSans-ExtraBold.ttf in Resources */,
+				F67482D82B51FE7F0045D0CD /* Chivo-BlackItalic.ttf in Resources */,
+				F674830E2B51FF1D0045D0CD /* HindSiliguri-Bold.ttf in Resources */,
+				F674827B2B507A8B0045D0CD /* Preview Assets.xcassets in Resources */,
+				F67482D12B51FE7F0045D0CD /* Chivo-SemiBoldItalic.ttf in Resources */,
+				F67482FA2B51FEF10045D0CD /* FiraSans-Light.ttf in Resources */,
+				F67482F62B51FEF10045D0CD /* FiraSans-Italic.ttf in Resources */,
+				F67482FE2B51FEF10045D0CD /* FiraSans-SemiBoldItalic.ttf in Resources */,
+				F67482D42B51FE7F0045D0CD /* Chivo-ExtraLight.ttf in Resources */,
+				F674830F2B51FF1D0045D0CD /* HindSiliguri-Regular.ttf in Resources */,
+				F67482D02B51FE7F0045D0CD /* Chivo-Regular.ttf in Resources */,
+				F67482CE2B51FE7F0045D0CD /* Chivo-ExtraBold.ttf in Resources */,
+				F67482FB2B51FEF10045D0CD /* FiraSans-Regular.ttf in Resources */,
+				F674830D2B51FF1D0045D0CD /* HindSiliguri-Medium.ttf in Resources */,
+				F67482DE2B51FE7F0045D0CD /* Chivo-Light.ttf in Resources */,
+				F67482D32B51FE7F0045D0CD /* Chivo-BoldItalic.ttf in Resources */,
+				F67482CF2B51FE7F0045D0CD /* Chivo-ExtraLightItalic.ttf in Resources */,
+				F67482772B507A8B0045D0CD /* Assets.xcassets in Resources */,
+				F67482F42B51FEF10045D0CD /* FiraSans-ExtraBoldItalic.ttf in Resources */,
+				F67482DD2B51FE7F0045D0CD /* Chivo-MediumItalic.ttf in Resources */,
+				F674830C2B51FF1D0045D0CD /* HindSiliguri-Light.ttf in Resources */,
+				F67483052B51FEF10045D0CD /* FiraSans-Medium.ttf in Resources */,
+				F67482F82B51FEF10045D0CD /* FiraSans-SemiBold.ttf in Resources */,
+				F67482D92B51FE7F0045D0CD /* Chivo-Italic.ttf in Resources */,
+				F67482DB2B51FE7F0045D0CD /* Chivo-Black.ttf in Resources */,
+				F67482D62B51FE7F0045D0CD /* Chivo-Medium.ttf in Resources */,
+				F67482DC2B51FE7F0045D0CD /* Chivo-SemiBold.ttf in Resources */,
+				F67482FC2B51FEF10045D0CD /* FiraSans-LightItalic.ttf in Resources */,
+				F67483102B51FF1D0045D0CD /* HindSiliguri-SemiBold.ttf in Resources */,
+				F67482DF2B51FE7F0045D0CD /* Chivo-ThinItalic.ttf in Resources */,
+				F67482FD2B51FEF10045D0CD /* FiraSans-BoldItalic.ttf in Resources */,
+				F67483002B51FEF10045D0CD /* FiraSans-Thin.ttf in Resources */,
+				F67482F72B51FEF10045D0CD /* FiraSans-Black.ttf in Resources */,
+				F67483032B51FEF10045D0CD /* FiraSans-BlackItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F674827E2B507A8B0045D0CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67482882B507A8B0045D0CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F674826B2B507A880045D0CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F674831B2B5510690045D0CD /* Date+DayOfWeek.swift in Sources */,
+				F67482A82B507B130045D0CD /* HomeViewModelProtocol.swift in Sources */,
+				F67482AC2B507B2D0045D0CD /* HomeView.swift in Sources */,
+				F67482AA2B507B1B0045D0CD /* HomeViewModel.swift in Sources */,
+				F67482B32B508ECB0045D0CD /* String+GetFormattedOperatingHours.swift in Sources */,
+				F67482B62B509B100045D0CD /* DayOfWeek.swift in Sources */,
+				F67482752B507A880045D0CD /* ContentView.swift in Sources */,
+				F674831E2B55CE720045D0CD /* OperatingShiftsAccordian.swift in Sources */,
+				F67483202B55F3250045D0CD /* OperationStatus.swift in Sources */,
+				F67482AE2B507B3C0045D0CD /* ConstantsHome.swift in Sources */,
+				F67483152B54DE4A0045D0CD /* MenuView.swift in Sources */,
+				F67482732B507A880045D0CD /* PursChallengeApp.swift in Sources */,
+				F67483172B54EED20045D0CD /* Date+IsMidnight.swift in Sources */,
+				F67483132B54C7510045D0CD /* OperatingDay.swift in Sources */,
+				F67482B02B50826C0045D0CD /* Business.swift in Sources */,
+				F67482A42B507AF10045D0CD /* DataSourceHomeProtocol.swift in Sources */,
+				F67482A62B507AFF0045D0CD /* DataSourceHome.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F674827C2B507A8B0045D0CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67482852B507A8B0045D0CD /* PursChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67482862B507A8B0045D0CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67482912B507A8B0045D0CD /* PursChallengeUITestsLaunchTests.swift in Sources */,
+				F674828F2B507A8B0045D0CD /* PursChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F67482822B507A8B0045D0CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F674826E2B507A880045D0CD /* PursChallenge */;
+			targetProxy = F67482812B507A8B0045D0CD /* PBXContainerItemProxy */;
+		};
+		F674828C2B507A8B0045D0CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F674826E2B507A880045D0CD /* PursChallenge */;
+			targetProxy = F674828B2B507A8B0045D0CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F67482922B507A8B0045D0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F67482932B507A8B0045D0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F67482952B507A8B0045D0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PursChallenge/PursChallenge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PursChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = UQ6K7P9GSH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PursChallenge/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asadrzv.PursChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F67482962B507A8B0045D0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PursChallenge/PursChallenge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PursChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = UQ6K7P9GSH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PursChallenge/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asadrzv.PursChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F67482982B507A8B0045D0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQ6K7P9GSH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asadrzv.PursChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PursChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PursChallenge";
+			};
+			name = Debug;
+		};
+		F67482992B507A8B0045D0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQ6K7P9GSH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asadrzv.PursChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PursChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PursChallenge";
+			};
+			name = Release;
+		};
+		F674829B2B507A8B0045D0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQ6K7P9GSH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asadrzv.PursChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PursChallenge;
+			};
+			name = Debug;
+		};
+		F674829C2B507A8B0045D0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQ6K7P9GSH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asadrzv.PursChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PursChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F674826A2B507A880045D0CD /* Build configuration list for PBXProject "PursChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67482922B507A8B0045D0CD /* Debug */,
+				F67482932B507A8B0045D0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F67482942B507A8B0045D0CD /* Build configuration list for PBXNativeTarget "PursChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67482952B507A8B0045D0CD /* Debug */,
+				F67482962B507A8B0045D0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F67482972B507A8B0045D0CD /* Build configuration list for PBXNativeTarget "PursChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67482982B507A8B0045D0CD /* Debug */,
+				F67482992B507A8B0045D0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F674829A2B507A8B0045D0CD /* Build configuration list for PBXNativeTarget "PursChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F674829B2B507A8B0045D0CD /* Debug */,
+				F674829C2B507A8B0045D0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F67482672B507A880045D0CD /* Project object */;
+}
