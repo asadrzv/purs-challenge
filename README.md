@@ -33,9 +33,9 @@ I also added a demo menu screen that is shown when the users swipes up on the 'V
 
 ## Possible Future Improvements
 
-- [] Separate the logic for the Accordian into a separate ViewModel if the accordian requires more complexity in the future.
-- [] Add UI and Unit tests to better test the code. Specifically each computed property for the Business, OperatingDay, and OperatinShift models. I would create mocks for model and the viewmodel to test them. Unfortunatley, my weeks was pretty stacked and I ran out of time to add tests.
-- [] Add a completed Menu screen
+- [ ] Separate the logic for the Accordian into a separate ViewModel if the accordian requires more complexity in the future.
+- [ ] Add UI and Unit tests to better test the code. Specifically each computed property for the Business, OperatingDay, and OperatinShift models. I would create mocks for model and the viewmodel to test them. Unfortunatley, my weeks was pretty stacked and I ran out of time to add tests.
+- [ ] Add a completed Menu screen
 
 
 ## Screenshots
