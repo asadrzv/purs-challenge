@@ -26,6 +26,11 @@ One important design choice I made was to parse the JSON file in a separate stru
 
 All code written and documented for the best readability possible. Documentation also includes the reasoning behind certain sections and design choices.
 
+## Updates to design
+
+I updated the appearence of Dates to match the user's personal Settings for 12/24 hour time.
+I also added a demo menu screen that is shown when the users swipes up on the 'View Menu' text at the bottom of the screen.
+
 ## Possible Future Improvements
 
 - [] Separate the logic for the Accordian into a separate ViewModel if the accordian requires more complexity in the future.
