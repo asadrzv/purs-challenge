@@ -1,6 +1,6 @@
-# Business Times: BEASTRO by Marshawn Lynch
+# Business Hours
 
-This is a single-screen SwiftUI (MVVM) app made to load the data from [Demo URL](https://purs-demo-bucket-test.s3.us-west-2.amazonaws.com/location.json) and processes it to be displayed using the [Figma wireframe](https://www.figma.com/file/5BXJxCRmeOCeWyW9D0ivc7/Mobile-Take-home?node-id=0%3A1&mode=dev).
+This is a single-screen SwiftUI (MVVM) app made to load the data for the café 'BEASTRO by Marshawn Lynch' from [Demo URL](https://purs-demo-bucket-test.s3.us-west-2.amazonaws.com/location.json) and processes it to be displayed using the [Figma wireframe](https://www.figma.com/file/5BXJxCRmeOCeWyW9D0ivc7/Mobile-Take-home?node-id=0%3A1&mode=dev).
 
 ## Requirements
 
