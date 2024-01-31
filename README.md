@@ -1,10 +1,10 @@
-# Purs Challenge
+# Business App
 
-This is a single-screen SwiftUI (MVVM) app made to complete the Purs. Mobile Take Home Assesment 1. The app loads the data from [Purs Demo URL](https://purs-demo-bucket-test.s3.us-west-2.amazonaws.com/location.json) and processes it to be displayed using the [Figma wireframe ](https://www.figma.com/file/5BXJxCRmeOCeWyW9D0ivc7/Mobile-Take-home?node-id=0%3A1&mode=dev).
+This is a single-screen SwiftUI (MVVM) app made to load the data from [Demo URL](https://purs-demo-bucket-test.s3.us-west-2.amazonaws.com/location.json) and processes it to be displayed using the [Figma wireframe](https://www.figma.com/file/5BXJxCRmeOCeWyW9D0ivc7/Mobile-Take-home?node-id=0%3A1&mode=dev).
 
 ## Requirements
 
-The following requirements are completed:
+The following elements are completed:
 
 - [x] Business details loaded in from given URL
 - [x] JSON data parsed to combine days with multiple business shifts
